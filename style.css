@@ -1,0 +1,173 @@
+:root{
+
+
+    --light-cyan: hsl(179, 59%, 59%);
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+   
+  
+}
+
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    background-color: var(--light-gray);
+
+}
+.container{
+    margin-top: 50px;
+    display: block;
+    width: 90vw;
+    
+    max-width: 800px;
+    
+    border-radius: 10px;
+}
+.container > div {
+   width: 100%;
+   min-height: 250px;
+   padding: 5vw 10vw;
+}
+
+h1,h2,p,a{
+    padding: 15px 0;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color:var(--light-gray);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.card-one{
+    border-radius: 10px 10px 0 0 ;
+    background-color: white
+}
+
+    .card-one h1{
+        font-size: 1.5rem;
+        color: var(--cyan);
+    }
+
+    .card-one h2{
+        color: var(--bright-yellow);
+    }
+
+    .card-one p {
+        color: var(--grayish-blue);
+    }
+
+.card-two{
+    background-color: var(--cyan);
+}
+
+
+    
+
+    .card-two .price{
+        display: inline-flex;
+    
+
+    }
+
+        .price > span {
+            margin: 6px;
+        }
+
+        .card-two .span-one{
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .card-two .span-two{
+            padding-block: 10px 0;
+            color: var(--light-gray);
+        }
+
+    .card-two p {
+        color: white;
+        
+    }
+
+    .card-two .sign-up {
+        margin-top: 15px;
+        padding: 15px 20px;
+        background-color: var(--bright-yellow);
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    .card-two a{
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+    }
+
+
+.card-three{
+    border-radius: 0 0 10px 10px  ;
+    background-color: var(--light-cyan);
+}
+
+
+
+@media screen and (min-width:900px) {
+    *{
+        font-size: 18px;
+        
+    }
+
+    .container{
+        margin-top: 120px;
+        display: grid;
+        
+    
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 400px 400pxs;
+    }
+
+    .container > div{
+        width: 100%;
+        height: 100%;
+        padding: 30px 50px;
+    }
+
+    .container .card-one{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .container .card-two{
+        border-radius: 0 0 0 10px;
+    }
+
+    .container .card-three{
+        border-radius: 0 0 10px 0;
+    }
+
+
+
+
+
+    
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
